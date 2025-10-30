@@ -1,9 +1,14 @@
+
 import React from "react";
 
-function NavBar() {
-  const links = ["home", "about", "projects"];
-
-  return <nav>{/* display an <a> tag for each link here */}</nav>;
+function Links({ github, linkedin }) {
+  return (
+    <div>
+      <h3>Links</h3>
+      <a href={github}>{github}</a>
+      <a href={linkedin}>{linkedin}</a>
+    </div>
+  );
 }
 
-export default NavBar;
+export default Links;
